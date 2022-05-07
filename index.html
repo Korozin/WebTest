@@ -2,16 +2,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Test</title>
+    <title>Korozin Exploit</title>
     <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script language="javascript">
+        function changeText(idElement) {
+            if (idElement == 1) {
+                document.getElementById('element' + idElement).innerHTML = '<a href="#">Loading.. <i class="fa fa-refresh fa-spin fa-fw"></i></a>';
+            }
+        }
+    </script>
 </head>
 
 <body>
     <br>
     <center><img src="../images/NUS_logo.png" alt="Logo"></center>
-    <center><a href="index-hax.php" class="myButton">Launch</a></center>
-    <div style="height:4px;font-size:1px;">&nbsp;</div>
     <br>
+    <center><a href="index-hax.php" id="element1" class="myButton" onClick="javascript:changeText(1)">Launch</a></center>
 </body>
 
 </html>
